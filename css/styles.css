@@ -4,11 +4,12 @@
 	--subtitle-color: #757575;
 	--headbg-color: #ffffff;
 	--logo-color: #000000;
-	--hero-footer-background: #2f303a;
+	--footer-background: #2f303a;
 	--team-background: #f5f4fa;
 	--contact-color-footer: rgba(255, 255, 255, 0.6);
 	--border-portfolio: #eeeeee;
 	--border-header: #ececec;
+	--hero-background: #c4c4c4;
 }
 
 h1,
@@ -165,12 +166,39 @@ body {
 	margin-left: 50px;
 }
 
+.contact-item {
+	display: flex;
+	align-items: center;
+	fill: #757575;
+}
+
+.contact-item:hover {
+	fill: #2196f3;
+}
+
+.icon-envelope {
+	width: 16px;
+	height: 15px;
+	margin-right: 10px;
+}
+.icon-smartphone {
+	width: 16px;
+	height: 15px;
+	margin-right: 10px;
+}
 /* ======================== HERO ======================== */
 .section-hero {
-	background-color: var(--hero-footer-background);
+	background-color: var(--hero-background);
+
 	text-align: center;
 	padding-top: 200px;
 	padding-bottom: 198px;
+}
+
+.img-hero {
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img-hero.jpg);
+	max-width: 1600px;
+	margin: 0 auto;
 }
 
 .main-title {
@@ -250,7 +278,22 @@ body {
 	letter-spacing: 0.03em;
 	color: var(--subtitle-color);
 }
+.detail-item {
+	display: flex;
+	flex-direction: column;
+	/* align-content: center; */
+	width: 270px;
+	height: 120px;
+	margin-bottom: 30px;
+	background: #f5f4fa;
+	border-radius: 4px;
+	padding: 25px 100px;
+}
 
+.icon-antenna {
+	width: 70px;
+	height: 70px;
+}
 /* ======================== What are we doing ======================== */
 .section-doing {
 	padding-top: 0px;
@@ -314,7 +357,9 @@ body {
 
 /* ======================== footer ======================== */
 .footer {
-	background-color: var(--hero-footer-background);
+	background-color: var(--footer-background);
+	max-width: 1600px;
+	margin: 0 auto;
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
