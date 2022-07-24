@@ -271,12 +271,14 @@ body {
 	height: 75px;
 }
 
-.icon-detail {
+/* .icon-detail {
 	margin-bottom: 30px;
 	margin: 25px 100px;
-}
+} */
 .icon-position-details {
-	width: 270px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 120px;
 	margin-bottom: 30px;
 	background-color: var(--bg-color-detail);
@@ -310,14 +312,13 @@ body {
 	gap: 30px;
 }
 
-.image-team {
-	margin-bottom: 30px;
-}
 .team-item {
 	background: var(--headbg-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .border-team {
+	padding-top: 30px;
+	padding-bottom: 30px;
 	border-radius: 0px 0px 4px 4px;
 }
 
@@ -342,7 +343,6 @@ body {
 	display: flex;
 	justify-content: center;
 	gap: 10px;
-	margin-bottom: 30px;
 }
 
 .link-team {
@@ -375,13 +375,23 @@ body {
 }
 
 .clients-item {
+	width: 170px;
+	height: 92px;
+}
+
+.link-clients {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border: 1px solid var(--icon-fill);
 	border-radius: 4px;
-	padding: 16px 32px;
 	fill: var(--icon-fill);
 }
-.clients-item:hover,
-.clients-item:focus {
+
+.link-clients:hover,
+.link-clients:focus {
 	fill: var(--accent-color);
 	border: 1px solid var(--accent-color);
 }
@@ -450,7 +460,6 @@ body {
 .list-social-footer {
 	display: flex;
 	gap: 10px;
-	margin-bottom: 30px;
 }
 
 .link-team-footer {
@@ -461,7 +470,7 @@ body {
 	height: 44px;
 	border-radius: 50%;
 	background-color: var(--bg-color-icon-footer);
-	fill: var(--icon-fill);
+	fill: var(--headbg-color);
 }
 
 .link-team-footer:hover,
@@ -469,10 +478,6 @@ body {
 	background-color: var(--accent-color);
 }
 
-.link-team-footer:hover .icon-social-footer,
-.link-team-footer:focus .icon-social-footer {
-	fill: var(--headbg-color);
-}
 .wrapper-logo-address {
 	margin-right: 70px;
 }
@@ -537,8 +542,11 @@ body {
 	letter-spacing: 0.03em;
 	color: var(--subtitle-color);
 }
+.link-portfolio {
+	display: block;
+}
 
-.item-portfolio:hover,
-.item-portfolio:focus {
+.link-portfolio:hover,
+.link-portfolio:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
